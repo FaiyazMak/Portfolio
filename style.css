@@ -1,0 +1,208 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: rgb(248, 248, 231); */
+}
+
+body{
+    background-color: rgb(248, 248, 231);
+}
+
+.container{
+    display: flex;
+}
+
+.sideBar{
+    background-color: rgb(209, 204, 204);
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in;
+}
+
+.sideBar nav{
+    padding-top: 50px;
+}
+
+.sideBar li{
+    list-style: none;
+    margin: 30px 20px;
+    padding: 10px;
+}
+
+.sideBar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.7em;
+    margin: 10px 10px;
+}
+
+.sideBar li a:hover{
+    color: rgb(182, 6, 6);
+}
+
+.hamburger{
+    display: flex;
+    flex-direction:row-reverse;
+    /* border: 1px solid red; */
+}
+
+.ham img{
+    width: 20px;
+    position:absolute;
+    top: 12px;
+    left: 10px;
+}
+
+.cross img{
+    width: 20px;
+    margin-top: 6px;
+    position: absolute;
+    top: 5px;
+    left: 150px;
+}
+
+.sideBarGo{
+    transform: translate(-200px,0px);
+    position: sticky;
+}
+
+.main{
+    background-color: rgb(248, 248, 231);
+    width: 90vw;
+    /* height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.infoContainer{
+    /* background-color: rgb(192, 192, 250); */
+    /* height: 45vh; */
+    width: 75vw;
+    margin: 140px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.hello{
+    font-size: 1.3em;
+    /* border: 1px solid red; */
+    padding: 5px 10px;
+}
+
+.name{
+    /* border: 1px solid red; */
+    font-size: 1.5em;
+    padding: 5px 10px;
+}
+
+.about{
+    /* border: 1px solid red; */
+    font-size: 1.2em;
+    padding: 10px 10px;
+}
+
+.moreAbout{
+    /* border: 1px solid red; */
+    font-size: 1.1em;
+    padding: 15px 10px;
+}
+
+.devPic img{
+    height: 45vh;
+}
+
+/* Utility Function */
+.btn{
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: rgb(61, 61, 105);
+    color: white;
+    margin: 10px 5px;
+}
+
+.btn-sm{
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgb(61, 61, 105);
+    color: white;
+    margin: 6px 4px;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(44, 44, 95);
+}
+
+/* media query */
+@media only screen and (max-width: 900px) {
+    body{
+        background-color: blue;
+    }
+
+    .sideBar{
+        position: absolute ;
+        top: 0px;
+        left: 0px;
+    }
+
+    .main{
+        
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .infoContainer{
+        width: 99vw;
+        margin: 50px auto;
+        flex-direction: column-reverse;
+        /* border: 2px solid red; */
+    }
+
+    .devInfo{
+        font-size: 17px;
+    }
+
+    .devPic img{
+        height: 100px;
+        /* border: 2px solid red; */
+    }
+
+    .intro p{
+        padding: 6px 4px;
+        font-size: 20px;
+    }
+
+}
+
+
+/* intro section-- */
+.intro{
+    /* height: 400vh; */
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(248, 248, 231);
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 2px solid red; */
+}
+
+.intro p{
+    padding: 10px 5px;
+    font-size: 28px;
+}
